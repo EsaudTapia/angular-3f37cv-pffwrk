@@ -1,0 +1,27 @@
+<!-- mxgraph.component.html -->
+<div class="mxgraph-container">
+  <div id="sidebar" class="sidebar">
+    <div
+      class="draggable"
+      draggable="true"
+      style="background-color: #ffffff; width: 100px; height: 50px;"
+    >
+      Elemento 1
+    </div>
+    <div
+      class="draggable"
+      draggable="true"
+      style="background-color: #ffffff; width: 100px; height: 50px;"
+    >
+      Elemento 2
+    </div>
+    <!-- Agrega más elementos arrastrables según necesites -->
+  </div>
+  <div
+    #graphContainer
+    class="graphContainer"
+    id="graphContainer "
+    (drop)="onDrop($event)"
+    (dragover)="onDragOver($event)"
+  ></div>
+</div>
